@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AuraRoomie - Find Your Ideal Roommate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #6a1b9a;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #9c27b0;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    #start-voice {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #ce93d8;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    #start-voice:hover {
+      background-color: #ab47bc;
+    }
+
+    #voice-text {
+      margin-bottom: 2rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #6a1b9a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #4a148c;
+    }
+
+    .quote {
+      margin: 2rem 0;
+      font-style: italic;
+      color: #7b1fa2;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AuraRoomie</h1>
+      <p>✨ Meet your vibe-matching roomie in seconds ✨</p>
+    </header>
+
+    <main>
+      <img src="https://i.pinimg.com/736x/e0/58/c3/e058c381e40de2bb1e38d46a227ca173.jpg" alt="Two cartoon women" />
+
+" alt="Roommates laughing together" />
+      
+      <div class="quote">“Good roommates are like soulmates — they just get you.”</div>
+
+      <button id="start-voice">🎤 Start Voice Intro</button>
+      <p id="voice-text">Say something about yourself…</p>
+
+      <a href="signup.html" class="cta">Roomie’s Algorithm: Activated</a>
+
+      <div class="quote">“Your vibe attracts your tribe.”</div>
+
+      <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=900&q=60" alt="Cozy shared apartment space" />
+    </main>
+
+    <footer>
+      <small>Built with ❤️ for women’s co-living spaces</small>
+    </footer>
+  </div>
+
+  <script>
+    // Simulated voice interaction (for demo purposes only)
+    document.getElementById("start-voice").addEventListener("click", function() {
+      document.getElementById("voice-text").textContent = "🎙️ Listening… tell us what makes you an awesome roomie!";
+    });
+  </script>
+</body>
+</html>
