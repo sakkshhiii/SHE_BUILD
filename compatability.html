@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compatibility Matches - RommieAura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+      color: #333;
+    }
+
+    header {
+      background-color: #880e4f;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #f06292;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .match {
+      font-size: 1rem;
+      color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    .chat-btn {
+      padding: 0.5rem 1rem;
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .chat-btn:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <header>💞 Your RommieAura Matches</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=800&q=80" alt="Woman 1" class="profile-img" />
+      <div class="name">Ananya Sharma</div>
+      <div class="match">Match: 92%</div>
+      <button class="chat-btn">Chat Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589571739149-47ed80eae6ba?auto=format&fit=crop&w=800&q=80" alt="Woman 2" class="profile-img" />
+      <div class="name">Neha Kapoor</div>
+      <div class="match">Match: 89%</div>
+      <button class="chat-btn">Chat Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1613553507747-6d7a1b9ce9d2?auto=format&fit=crop&w=800&q=80" alt="Woman 3" class="profile-img" />
+      <div class="name">Riya Banerjee</div>
+      <div class="match">Match: 87%</div>
+      <button class="chat-btn">Chat Now</button>
+    </div>
+
+    <div class="card">
+      <img src="" alt="Woman 4" class="profile-img" />
+      <div class="name">Isha Mehta</div>
+      <div class="match">Match: 85%</div>
+      <button class="chat-btn">Chat Now</button>
+    </div>
+  </div>
+</body>
+</html>
