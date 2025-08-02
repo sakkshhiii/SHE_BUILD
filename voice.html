@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Introduction - RommieAura</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe4ec, #f3f9ff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .form-container {
+      max-width: 900px;
+      background: #ffffff;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #d63384;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .form-subtitle {
+      font-size: 16px;
+      color: #6c757d;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .voice-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .voice-form label {
+      font-weight: 600;
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    .voice-form select,
+    .voice-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background-color: #f8f9fa;
+      font-size: 14px;
+    }
+
+    .voice-form textarea::placeholder {
+      color: #999;
+    }
+
+    .btn {
+      background-color: #ff69b4;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6459f;
+    }
+
+    .mic-btn {
+      background-color: #20c997;
+      margin-top: 10px;
+    }
+
+    .mic-btn:hover {
+      background-color: #179e82;
+    }
+
+    #recording-status {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+
+    .side-image {
+      width: 280px;
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .side-image {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🎤 Voice Intro & Preferences</h2>
+    <p class="form-subtitle">Let your vibe speak for itself!</p>
+
+    <form class="voice-form">
+      <label>What's your weekend vibe?</label>
+      <select>
+        <option>Netflix + Snacks</option>
+        <option>Outdoor Adventures</option>
+        <option>Chill with plants and books</option>
+        <option>Parties & Social Nights</option>
+      </select>
+
+      <label>Are you more of a morning person or night owl?</label>
+      <select>
+        <option>Morning Sunshine ☀️</option>
+        <option>Midnight Hustler 🌙</option>
+      </select>
+
+      <label>Describe yourself in a few lines:</label>
+      <textarea rows="4" placeholder="Creative, clean, introvert... just type it out!"></textarea>
+
+      <label>Speak your introduction (Voice Recorder)</label><br>
+      <button type="button" onclick="startRecording()" class="btn mic-btn">🎙️ Start Talking</button>
+      <p id="recording-status">Not recording</p>
+
+      <button type="submit" class="btn">Submit Intro</button>
+    </form>
+
+    <!-- ✅ Vecteezy image of woman using voice assistant -->
+    <img 
+      src="https://static.vecteezy.com/system/resources/previews/008/516/015/non_2x/woman-using-voice-commands-to-control-a-smart-home-devices-vector.jpg" 
+      class="side-image" 
+      alt="Woman using voice assistant to control smart devices"
+    />
+  </div>
+
+  <script>
+    function startRecording() {
+      const status = document.getElementById("recording-status");
+      status.innerText = "Recording... 🎧 (This is a demo)";
+      setTimeout(() => {
+        status.innerText = "Recording complete ✔️";
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
